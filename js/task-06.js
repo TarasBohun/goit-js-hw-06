@@ -11,8 +11,9 @@ const redBorderColor = () => {
 };
 
 function correctAmountOfSymbols(event) {
-  console.log();
-  event.currentTarget.value.length === Number(input.getAttribute("data-length"))
+  console.log(event.currentTarget.value.trim());
+  event.currentTarget.value.trim().length ===
+  Number(input.getAttribute("data-length"))
     ? greenBorderColor()
     : redBorderColor();
 }
