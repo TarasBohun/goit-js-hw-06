@@ -12,6 +12,8 @@ function handleSubmit(event) {
     elements: { email, password },
   } = event.currentTarget;
 
+  // const { email, password } = event.currentTarget.elements;
+
   if (email.value === "" || password.value === "") {
     alert("Заповніть усі поля!!!");
   }
