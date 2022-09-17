@@ -1,8 +1,6 @@
-const totalCategories = document.querySelectorAll(".item");
-console.log(`Number of categories: ${totalCategories.length}`);
-console.log("");
-
 const categories = document.querySelectorAll(".item");
+console.log(`Number of categories: ${categories.length}`);
+console.log("");
 
 const result = categories.forEach((category) => {
   const titleOfCategory = category.firstElementChild.textContent;
