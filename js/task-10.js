@@ -6,10 +6,10 @@ const input = document.querySelector("input");
 const btnCreate = document.querySelector("button[data-create]");
 const btnDestroy = document.querySelector("button[data-destroy]");
 
-btnCreate.addEventListener("click", () => createColections(input.value));
-btnDestroy.addEventListener("click", deleteColections);
+btnCreate.addEventListener("click", () => createBoxes(input.value));
+btnDestroy.addEventListener("click", deleteBoxes);
 
-function createColections(amount) {
+function createBoxes(amount) {
   const boxes = document.querySelector("#boxes");
 
   for (let i = 0; i < amount; i += 1) {
@@ -22,7 +22,7 @@ function createColections(amount) {
   }
 }
 
-function deleteColections() {
+function deleteBoxes() {
   while (boxes.firstChild) {
     boxes.removeChild(boxes.firstChild);
   }
